@@ -1,3 +1,4 @@
+import 'package:covid_app/Controllers/covid_controller.dart';
 import 'package:covid_app/Services/states_services.dart';
 import 'package:covid_app/View/detail_screen.dart';
 import 'package:covid_app/constant/color.dart';
@@ -13,7 +14,9 @@ class CountriesList extends StatefulWidget {
 }
 
 class _CountriesListState extends State<CountriesList> {
-  TextEditingController searchContoller = TextEditingController();
+  final WorldStatesController controller = Get.put(WorldStatesController());
+  TextEditingController searchController = TextEditingController();
+
   @override
   Widget build(BuildContext context) {
     StatesServices statesServices = StatesServices();
@@ -27,7 +30,7 @@ class _CountriesListState extends State<CountriesList> {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: TextFormField(
-              controller: searchContoller,
+              controller: searchController,
               onChanged: (value) {
                 setState(() {});
               },
@@ -76,7 +79,7 @@ class _CountriesListState extends State<CountriesList> {
                           itemCount: snapshot.data!.length,
                           itemBuilder: (context, index) {
                             String name = snapshot.data![index]['country'];
-                            if (searchContoller.text.isEmpty) {
+                            if (searchController.text.isEmpty) {
                               return Column(
                                 children: [
                                   InkWell(
@@ -118,9 +121,8 @@ class _CountriesListState extends State<CountriesList> {
                                   )
                                 ],
                               );
-                            } else if (name
-                                .toLowerCase()
-                                .contains(searchContoller.text.toLowerCase())) {
+                            } else if (name.toLowerCase().contains(
+                                searchController.text.toLowerCase())) {
                               return Column(
                                 children: [
                                   InkWell(
