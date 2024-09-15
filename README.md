@@ -1,8 +1,8 @@
 # Covid19 Tracking App
 
 <p>
-<img src="https://github.com/user-attachments/assets/8cda6add-b16d-4ad6-800d-8e9350255c83" alt="Image 1" style="margin-right: 20px; margin-bottom: 10px;" width="30%">
 <img src="https://github.com/user-attachments/assets/e9843012-bbea-4a05-87a4-446a267faef9" alt="Image 1" style="margin-right: 20px; margin-bottom: 10px;" width="30%">
+<img src="https://github.com/user-attachments/assets/8cda6add-b16d-4ad6-800d-8e9350255c83" alt="Image 1" style="margin-right: 20px; margin-bottom: 10px;" width="30%">
   <img src="https://github.com/user-attachments/assets/f63bf5a1-f501-4999-84bc-32be346e829e" alt="Image 1" style="margin-right: 10px; margin-bottom: 10px;" width="30%">
   </p>
 <p>
