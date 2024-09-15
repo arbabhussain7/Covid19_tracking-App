@@ -14,6 +14,7 @@
 
 
 
+
 This project is a Covid-19 tracking app that provides real-time data on Covid-19 cases for countries around the world. The app fetches and displays country-wise Covid-19 statistics using a REST API, offering users up-to-date information on cases, recoveries, and deaths.
 
 ## Features
